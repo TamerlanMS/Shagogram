@@ -45,5 +45,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.ccp)
     implementation("com.hbb20:ccp:X.Y.Z")
-    implementation(libs.firebase.bom.v3312)
+    implementation(platform(libs.firebase.bom.v3312))
 }

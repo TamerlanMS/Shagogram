@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.shagogram.utils.AndroidUtil;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
@@ -29,8 +30,6 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
-
-import com.example.shagogram.utils.AndroidUtil;
 
 public class LoginOtpActivity extends AppCompatActivity {
 
@@ -88,7 +87,7 @@ public class LoginOtpActivity extends AppCompatActivity {
 
                             @Override
                             public void onVerificationFailed(@NonNull FirebaseException e) {
-                                AndroidUtil.showToast(getApplicationContext(),"OTP verification failed");
+                                AndroidUtil.showToast(getApplicationContext(),"Ошибка верификации");
                                 setInProgress(false);
                             }
 
@@ -97,7 +96,7 @@ public class LoginOtpActivity extends AppCompatActivity {
                                 super.onCodeSent(s, forceResendingToken);
                                 verificationCode = s;
                                 resendingToken = forceResendingToken;
-                                AndroidUtil.showToast(getApplicationContext(),"OTP sent successfully");
+                                AndroidUtil.showToast(getApplicationContext(),"Код успешно отправлен");
                                 setInProgress(false);
                             }
                         });
@@ -131,7 +130,7 @@ public class LoginOtpActivity extends AppCompatActivity {
                     intent.putExtra("phone",phoneNumber);
                     startActivity(intent);
                 }else{
-                    AndroidUtil.showToast(getApplicationContext(),"OTP verification failed");
+                    AndroidUtil.showToast(getApplicationContext(),"Ошибка верификации");
                 }
             }
         });
@@ -146,7 +145,7 @@ public class LoginOtpActivity extends AppCompatActivity {
             @Override
             public void run() {
                 timeoutSeconds--;
-                resendOtpTextView.setText("Resend OTP in "+timeoutSeconds +" seconds");
+                resendOtpTextView.setText("Переотправка кода через "+timeoutSeconds +" секунд");
                 if(timeoutSeconds<=0){
                     timeoutSeconds =60L;
                     timer.cancel();
@@ -160,3 +159,15 @@ public class LoginOtpActivity extends AppCompatActivity {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
