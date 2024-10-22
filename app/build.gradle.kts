@@ -46,4 +46,7 @@ dependencies {
     implementation(libs.ccp)
     implementation("com.hbb20:ccp:X.Y.Z")
     implementation(platform(libs.firebase.bom.v3312))
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+
 }

@@ -13,6 +13,20 @@
         android:theme="@style/Theme.Shagogram"
         tools:targetApi="31">
         <activity
+            android:name=".SearchUserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".LoginUsernameActivity"
             android:exported="false">
             <meta-data
@@ -34,20 +48,6 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/my_primary" />
 
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".SearchUserActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
         <activity
             android:name=".LoginPhoneNumberActivity"
             android:exported="false">

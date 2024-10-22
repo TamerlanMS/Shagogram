@@ -10,6 +10,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.shagogram.model.UserModel;
+import com.example.shagogram.utils.AndroidUtil;
+import com.example.shagogram.utils.FirebaseUtil;
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -18,12 +22,17 @@ public class SplashActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this,LoginPhoneNumberActivity.class));
+                if(FirebaseUtil.isLoggedIn()){
+                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                }else{
+                    startActivity(new Intent(SplashActivity.this,LoginPhoneNumberActivity.class));
+                }
                 finish();
             }
-        }, 3000);
+        },1000);
     }
 }
