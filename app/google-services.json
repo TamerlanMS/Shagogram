@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "503033810208",
+    "project_id": "shagogram-b3048",
+    "storage_bucket": "shagogram-b3048.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503033810208:android:03e1715cb56192c40adb45",
+        "android_client_info": {
+          "package_name": "com.example.shagogram"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuvsPjSPWSTF0xYYEejciWIS7wcZLwvRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
