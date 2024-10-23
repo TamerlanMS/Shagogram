@@ -4,12 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+import com.example.shagogram.chat.ChatActivity;
+import com.example.shagogram.login.LoginPhoneNumberActivity;
 import com.example.shagogram.model.UserModel;
 import com.example.shagogram.utils.AndroidUtil;
 import com.example.shagogram.utils.FirebaseUtil;
@@ -49,7 +47,7 @@ public class SplashActivity extends AppCompatActivity {
                     if(FirebaseUtil.isLoggedIn()){
                         startActivity(new Intent(SplashActivity.this,MainActivity.class));
                     }else{
-                        startActivity(new Intent(SplashActivity.this,LoginPhoneNumberActivity.class));
+                        startActivity(new Intent(SplashActivity.this, LoginPhoneNumberActivity.class));
                     }
                     finish();
                 }

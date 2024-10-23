@@ -1,11 +1,10 @@
-package com.example.shagogram;
+package com.example.shagogram.chat;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -14,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.shagogram.R;
 import com.example.shagogram.adapter.ChatRecyclerAdapter;
 import com.example.shagogram.model.ChatMessageModel;
 import com.example.shagogram.model.ChatroomModel;
@@ -22,7 +22,6 @@ import com.example.shagogram.utils.AndroidUtil;
 import com.example.shagogram.utils.FirebaseUtil;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.Timestamp;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.Query;
 
 import org.json.JSONObject;

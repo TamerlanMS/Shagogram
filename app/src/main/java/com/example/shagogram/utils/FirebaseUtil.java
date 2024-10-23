@@ -80,12 +80,3 @@ public class FirebaseUtil {
     }
 
 }
-
-
-
-
-
-
-
-
-

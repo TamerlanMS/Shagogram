@@ -1,4 +1,4 @@
-package com.example.shagogram;
+package com.example.shagogram.chat;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.shagogram.R;
 import com.example.shagogram.adapter.RecentChatRecyclerAdapter;
 import com.example.shagogram.model.ChatroomModel;
 import com.example.shagogram.utils.FirebaseUtil;
