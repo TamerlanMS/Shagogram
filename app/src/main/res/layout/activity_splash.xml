@@ -18,7 +18,7 @@
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:src="@drawable/chat_icon"
-            app:tint="@color/my_secondary" />
+            app:tint="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,7 +45,16 @@
         android:text="Developed by Tamerlan Mussabekov"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/off_white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logo design by Artem Lager"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
         android:textColor="@color/off_white"/>
 
 

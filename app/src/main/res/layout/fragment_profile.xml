@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_rounded_corner"
-            android:text="Редактировать"
+            android:text="Сохранить изменения"
             android:id="@+id/profle_update_btn"/>
         <ProgressBar
             android:layout_width="32dp"
